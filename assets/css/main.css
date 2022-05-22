@@ -1,0 +1,53 @@
+body {
+  font-size: clamp(1em, 1em + 2vw, 3em);
+  background-color: #CDE8F4;
+  color: #E63312;
+}
+
+/* header */
+
+.title,
+.new-es,
+.new-eng,
+.language {
+  position: fixed;
+}
+
+.title {
+  margin: 0;
+  top: 8px;
+  left: 15vw;
+}
+
+.language {
+  top: 8px;
+  right: 16px;
+  text-align: right;
+}
+
+.language a {
+  color: #E63312;
+  text-decoration: none;
+}
+
+/* main */
+
+main {
+  margin-top: 67vh;
+}
+
+p {
+  text-indent: 4em;
+}
+
+.authors-title {
+  font-size: 0.7em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.authors {
+  font-size: 0.7em;
+  list-style: none;
+  margin-top: 0;
+}
