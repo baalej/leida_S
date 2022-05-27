@@ -229,6 +229,11 @@ footer {
     left: 2.25em;
   }
 
+  #subscribe-close {
+    top: 4px;
+    right: 4px;
+  }
+
   .introduction {
     font-size: 1em;
   }
