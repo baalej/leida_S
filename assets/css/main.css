@@ -14,8 +14,8 @@ body {
   font-family: 'Turist', Times, serif;
   font-size: clamp(1em, 1em + 2vw, 3em);
   line-height: 1.05em;
-  background-color: #CDE8F4;
-  color: #E63312;
+  background-color: #a9c0cd;
+  color: #ff0000;
   margin: 24px;
 }
 
@@ -54,18 +54,18 @@ body {
 }
 
 .language a {
-  color: #E63312;
+  color: #ff0000;
   text-decoration: none;
 }
 
 .selected-language {
-  border-bottom: 0.06em solid #E63312;
+  border-bottom: 0.06em solid #ff0000;
 }
 
 /* main */
 
 main {
-  margin-top: 70vh;
+  margin-top: 80vh;
 }
 
 p {
