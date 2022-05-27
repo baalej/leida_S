@@ -4,6 +4,16 @@
   font-style: normal;
 }
 
+@keyframes slideUp {
+  from {
+    bottom: -8px;
+    opacity: 0.5;
+  } to {
+    bottom: 16px;
+    opacity: 1;
+  }
+}
+
 body {
   /* rendering */
   text-rendering: optimizeLegibility;
@@ -32,19 +42,21 @@ body {
   font-weight: normal;
   margin: 0;
   top: 24px;
-  left: 2em;
+  left: 2.5em;
 }
 
 .new-es {
   font-size: 1.6em;
-  top: 40vh;
-  left: 20vw;
+  top: 50vh;
+  transform: translateY(-50%);
+  left: 25vw;
 }
 
 .new-eng {
   font-size: 1.6em;
-  top: 40vh;
-  right: 20vw;
+  top: 50vh;
+  transform: translateY(-50%);
+  right: 25vw;
 }
 
 .language {
@@ -60,6 +72,68 @@ body {
 
 .selected-language {
   border-bottom: 0.06em solid #ff0000;
+}
+
+/* subscribe */
+
+#subscribe {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #FFFEE7;
+  font-size: 0.85em;
+  line-height: 1.05em;
+  text-align: center;
+  padding: 16px;
+  animation: slideUp 0.25s forwards ease-out;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.mail-input {
+  font-family: 'Turist', Times, serif;
+  font-size: 1em;
+  line-height: 1.05em;
+  color: #ff0000;
+  background: none;
+  border: none;
+  width: 8em;
+  border-bottom: 1px solid #ff0000;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+#subscribe-close {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  transform: scale(0.75);
+  cursor: pointer;
+}
+
+#subscribe-close:hover {
+  opacity: 0.75;
+}
+
+
+#subscribe-submit {
+  cursor: pointer;
+}
+
+#subscribe-submit:hover {
+  opacity: 0.75;
 }
 
 /* main */
@@ -149,6 +223,10 @@ footer {
   
   .new-eng {
     right: 15vw;
+  }
+
+  .title {
+    left: 2.25em;
   }
 
   .introduction {
