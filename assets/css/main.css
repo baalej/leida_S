@@ -30,7 +30,7 @@ body {
   font-family: 'Turist', Times, serif;
   font-size: clamp(1em, 1em + 2vw, 3em);
   line-height: 1.05em;
-  background-color: #a9c0cd;
+  background-color: #C3CCD1;
   color: #ff0000;
   margin: 24px;
 }
