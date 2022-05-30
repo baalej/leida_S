@@ -173,11 +173,13 @@ article {
 article p {
   font-size: 0.85em;
   line-height: 1.05em;
+  margin: 0;
 }
 
 .footnotes {
   font-size: 0.5em;
   line-height: 1.05em;
+  margin-top: 1em;
 }
 
 .footnotes ol {
