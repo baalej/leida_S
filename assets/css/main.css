@@ -1,3 +1,7 @@
+:root {
+  --text-indent-normal: 10vw;
+} 
+
 @font-face {
   font-family: 'Turist';
   src: url('../fonts/Turist-Regular.otf');
@@ -40,6 +44,13 @@ i {
   font-style: italic;
 }
 
+section {
+  margin-bottom: 2.5rem;
+}
+
+sup {
+  font-size: 0.5em;
+}
 /* header */
 
 .title,
@@ -53,7 +64,7 @@ i {
   font-weight: normal;
   margin: 0;
   top: 24px;
-  left: 12vw;
+  left: var(--text-indent-normal);
   transform: translateX(0.25em);
 }
 
@@ -155,7 +166,7 @@ main {
 }
 
 p {
-  text-indent: 12vw;
+  text-indent: var(--text-indent-normal);
 }
 
 .introduction {
@@ -195,7 +206,7 @@ article p {
 }
 
 .number {
-  margin-right: 4.5em;
+  margin-right: var(--text-indent-normal);
 }
 
 .article-title,
@@ -203,7 +214,7 @@ article p {
   font-size: 0.7em;
   font-weight: normal;
   margin: 1em 0;
-  text-indent: 12vw;
+  text-indent: var(--text-indent-normal);
 }
 
 .footnotes-title {
@@ -262,5 +273,9 @@ footer img {
 
   article {
     width: 100%;
+  }
+
+  .authors {
+    padding-left: var(--text-indent-normal);
   }
 }
